@@ -16,7 +16,8 @@ const productSchema = new mongoose.Schema({
         url: String,
         thumbnail: String,
         id: String
-    }]
+    }],
+    stock: {type: Number, default: 0},
 },
 {
     timestamps: {createdAt: 'created_at', updatedAt: 'updated_at'  
